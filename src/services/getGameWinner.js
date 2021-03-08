@@ -19,6 +19,10 @@ const getGameWinner = ({ gameState }) => {
       )
     )
       return gameState[conditionIndices[0]]
+
+  if (gameState.every(Boolean)) return 'Tie'
+
+  return null
 }
 
 export default getGameWinner
