@@ -12,7 +12,7 @@ const App = ({initialGameState}) => {
 
   useEffect(() => {
     setWinner(getGameWinner({ gameState }))
-  }, [xTurn])
+  }, [gameState, xTurn])
 
   const handleClick = (i) => {
     if (winner || gameState[i]) return;
@@ -29,12 +29,16 @@ const handleUndo = ( ) => {
   setXTurn(! xTurn)
 }
 
+const handleRestart = () => { 
+  setGameState(Array(9).fill(null))
+}
+
   return (
     <div className="App">
       <h1>Tic Tac Toe</h1>
       <p className="title">{winner ? `Winner: ${winner}` : `Next Turn: ${xTurn ? 'X' : 'O'}`}</p>
         <button className="controls" onClick={handleUndo}>Undo</button>
-        <button className="controls" onClick={() => setGameState(Array(9).fill(null))}>Start Game</button>
+        <button className="controls" onClick={handleRestart}>Start Game</button>
         <Game setGameState={setGameState} 
         gameState={gameState} 
         onClick={handleClick}/>
