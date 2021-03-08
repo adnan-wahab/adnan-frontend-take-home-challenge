@@ -1,8 +1,68 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Proxima Nova';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 10px;
+  text-align: center;
+  background: #333;
+  color: white
+}
+
+
+.board {
+  padding-top: 10px;
+  border-radius: 10px;
+	width: 36rem;
+	height: 36rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.square {
+  font-Size: 8rem;
+  font-Weight: 800;
+  cursor: pointer;
+  outline: none;
+  background: #333;
+  color: white;
+  background-image: linear-gradient(
+    180deg
+    ,#333,#444);
+    transition: all 2s;
+
+}
+
+
+button {
+  background-image: linear-gradient(
+    180deg
+    ,hsla(0,0%,100%,.8),hsla(0,0%,100%,0));
+  padding: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.bazinga {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;   
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(
+      0deg
+      );  }
+  to {
+    transform: rotateX(
+      180deg
+      );  }
+
+      to {
+        transform: rotateX(
+           360deg
+          );  }
 }
