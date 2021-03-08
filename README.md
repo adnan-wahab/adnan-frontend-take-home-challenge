@@ -12,6 +12,8 @@ services/ implements business logic
 
 App.jsx should probably be split into separate game, controls and board components 
 
+Bazinga should be replaced by a css-animation classname 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

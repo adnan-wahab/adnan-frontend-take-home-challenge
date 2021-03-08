@@ -2,9 +2,8 @@ import getGameWinner from '../services/getGameWinner'
 import { useEffect, useState } from 'react'
 import Game from './Game'
 
-const initialGameState = new Array(9).fill(null)
-
-const App = () => {
+const App = ({initialGameState}) => {
+  initialGameState = initialGameState || new Array(9).fill(null)
   const [gameState, setGameState] = useState(initialGameState)
 
   const [winner, setWinner] = useState(() => getGameWinner({ gameState }))

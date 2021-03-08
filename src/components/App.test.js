@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, fireEvent} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect'
 
 
@@ -35,3 +35,24 @@ expect(container.querySelector('.title').textContent).toBe('Next Turn: X');
 });
 
 
+it('should let you place x or o and then reset ',  async () => {
+    const initialGameStateMock = ['x', 'o', 'x', 
+    'o', 'x', 'o', 
+   'o', 'x', null ]
+
+    const { container } = render(<App initialGameState={initialGameStateMock}/>);
+
+    //8 played things
+    expect(container.querySelectorAll('.bazinga').length).toBe(8);
+
+    //4 Xes 
+    //expect(container.querySelectorAll('.bazinga').filter(el => el.textContent === 'X')).toBe(4);
+    const items = await screen.findAllByText('x')
+    expect(items).toHaveLength(4)
+
+    fireEvent.click(screen.getByText('Start Game'))
+
+    expect(container.querySelectorAll('.bazinga').length).toBe(0);
+});
+    
+    
