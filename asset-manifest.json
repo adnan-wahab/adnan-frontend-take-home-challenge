@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/adnan-frontend-take-home-challenge/static/css/main.5e0d94a6.chunk.css",
+    "main.js": "/adnan-frontend-take-home-challenge/static/js/main.6ee51926.chunk.js",
+    "main.js.map": "/adnan-frontend-take-home-challenge/static/js/main.6ee51926.chunk.js.map",
+    "runtime-main.js": "/adnan-frontend-take-home-challenge/static/js/runtime-main.65e1a4eb.js",
+    "runtime-main.js.map": "/adnan-frontend-take-home-challenge/static/js/runtime-main.65e1a4eb.js.map",
+    "static/js/2.f85afdc4.chunk.js": "/adnan-frontend-take-home-challenge/static/js/2.f85afdc4.chunk.js",
+    "static/js/2.f85afdc4.chunk.js.map": "/adnan-frontend-take-home-challenge/static/js/2.f85afdc4.chunk.js.map",
+    "index.html": "/adnan-frontend-take-home-challenge/index.html",
+    "static/css/main.5e0d94a6.chunk.css.map": "/adnan-frontend-take-home-challenge/static/css/main.5e0d94a6.chunk.css.map",
+    "static/js/2.f85afdc4.chunk.js.LICENSE.txt": "/adnan-frontend-take-home-challenge/static/js/2.f85afdc4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65e1a4eb.js",
+    "static/js/2.f85afdc4.chunk.js",
+    "static/css/main.5e0d94a6.chunk.css",
+    "static/js/main.6ee51926.chunk.js"
+  ]
+}
