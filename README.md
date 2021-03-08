@@ -14,6 +14,29 @@ App.jsx should probably be split into separate game, controls and board componen
 
 Bazinga should be replaced by a css-animation classname 
 
+OVERTIME:
+to execute this requirement "
+How can you make it easier for a collaborator to jump in and contribute features? 
+How can you make your code easier to debug and safer to run?" 
+
+i would add more tests and documentation. To be more safe, i would generate all possible inputs/board configurations and make sure they are all receiving the right result. some should be hardcoded and others can be calculated. 
+
+There's over 16,000 board configurations, so if you didnt want to generate them all because it would be too slow, you could store the board as a byteString and then use bitmasks to compare the boardState to all winStates. This would be slightly faster than looping and checking conditions but It's a bit of an overoptimization and over-engineering imo in this case. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
