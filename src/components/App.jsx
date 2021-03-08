@@ -25,7 +25,7 @@ const App = () => {
 };
 
 const handleUndo = ( ) => {
-  if(gameState.prev)
+  if (! gameState.prev) return
   setGameState(gameState.prev)
   setXTurn(! xTurn)
 }

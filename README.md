@@ -6,6 +6,9 @@
 - Offer an "undo move" feature.
 
 ---
+DEMO IS VISIBLE HERE [https://adnanwahab.com/adnan-frontend-take-home-challenge/]
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
