@@ -33,9 +33,9 @@ const handleUndo = ( ) => {
   return (
     <div className="App">
       <h1>Tic Tac Toe</h1>
-      <p>{winner ? `Winner: ${winner}` : `Next Turn: ${xTurn ? 'X' : 'O'}`}</p>
-        <button onClick={handleUndo}>Undo</button>
-        <button onClick={() => setGameState(Array(9).fill(null))}>Start Game</button>
+      <p className="title">{winner ? `Winner: ${winner}` : `Next Turn: ${xTurn ? 'X' : 'O'}`}</p>
+        <button className="controls" onClick={handleUndo}>Undo</button>
+        <button className="controls" onClick={() => setGameState(Array(9).fill(null))}>Start Game</button>
         <Game setGameState={setGameState} 
         gameState={gameState} 
         onClick={handleClick}/>
