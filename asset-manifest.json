@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/adnan-frontend-take-home-challenge/static/css/main.5e0d94a6.chunk.css",
-    "main.js": "/adnan-frontend-take-home-challenge/static/js/main.1a6a851a.chunk.js",
-    "main.js.map": "/adnan-frontend-take-home-challenge/static/js/main.1a6a851a.chunk.js.map",
+    "main.js": "/adnan-frontend-take-home-challenge/static/js/main.c3133637.chunk.js",
+    "main.js.map": "/adnan-frontend-take-home-challenge/static/js/main.c3133637.chunk.js.map",
     "runtime-main.js": "/adnan-frontend-take-home-challenge/static/js/runtime-main.65e1a4eb.js",
     "runtime-main.js.map": "/adnan-frontend-take-home-challenge/static/js/runtime-main.65e1a4eb.js.map",
     "static/js/2.f85afdc4.chunk.js": "/adnan-frontend-take-home-challenge/static/js/2.f85afdc4.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.65e1a4eb.js",
     "static/js/2.f85afdc4.chunk.js",
     "static/css/main.5e0d94a6.chunk.css",
-    "static/js/main.1a6a851a.chunk.js"
+    "static/js/main.c3133637.chunk.js"
   ]
 }
